@@ -150,27 +150,3 @@ Point to the `futex()` calls around the mutex as evidence the shared
 output file is never corrupted by interleaved writes.
 
 ---
-
-## Notes on adapting to Ubuntu 14.04 / gcc 4.8.4
-
-If your grading environment is the older ALU VM:
-- `clock_gettime(CLOCK_MONOTONIC, ...)` and `pthread_mutex_t` both work
-  fine on gcc 4.8.4 — no changes needed.
-- Link with `-lpthread -lm` exactly as shown; older gcc doesn't
-  auto-link pthreads.
-- If `strace -f` output is huge, filter with `-e trace=...` as shown
-  above rather than capturing everything, then `grep` the log for the
-  syscalls you're discussing.
-
-## Report checklist (per rubric)
-
-- [ ] Q1: explain the role of each traced syscall (`clone`, `pipe`,
-      `dup2`, `execve`, `read`/`write`, `openat`) in your own words.
-- [ ] Q2: table comparing syscall counts and elapsed time, syscall vs
-      stdio, with an explanation of *why* they differ.
-- [ ] Q3: confirm correctness of the final count, describe workload
-      division and why the mutex is locked once per thread rather than
-      per iteration.
-- [ ] Q4: results table for 2 threads / average-core threads / max
-      threads, plus a note on how the mutex prevents interleaved writes
-      to the shared output file.
