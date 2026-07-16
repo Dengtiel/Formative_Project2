@@ -1,11 +1,3 @@
-# Project 2 — System Call Tracing, I/O Performance, and Multithreading
-
-Formative assessment (17%). Individual work. Each question below is a
-self-contained C program with build/run/trace instructions.
-
-Environment used for development: gcc 13.3.0 on Ubuntu (adjust flags for
-Ubuntu 14.04 / gcc 4.8.4 if that's your grading VM — see notes per question).
-
 ## Repository layout
 
 ```
