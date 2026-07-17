@@ -1,0 +1,8 @@
+testdata/file1.txt: 24044 occurrence(s) of "keyword"
+testdata/file2.txt: 23762 occurrence(s) of "keyword"
+testdata/file6.txt: 24098 occurrence(s) of "keyword"
+testdata/file5.txt: 23963 occurrence(s) of "keyword"
+testdata/file4.txt: 23769 occurrence(s) of "keyword"
+testdata/file3.txt: 23989 occurrence(s) of "keyword"
+testdata/file7.txt: 24074 occurrence(s) of "keyword"
+testdata/file8.txt: 24024 occurrence(s) of "keyword"
